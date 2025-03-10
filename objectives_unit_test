@@ -1,0 +1,37 @@
+============================================================================= test session starts =============================================================================
+platform win32 -- Python 3.12.4, pytest-8.3.3, pluggy-1.5.0 -- C:\Users\USER\.conda\envs\ds3500\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\USER\OneDrive\Documents\Coding_programming\School semesters\Fall 2024 semester\DS 3500\HW 5\TA-allocation
+plugins: anyio-4.2.0, cov-5.0.0
+collected 5 items
+
+test_allocation_TA.py::test_over_allocation PASSED                                                                                                                       [ 20%]
+test_allocation_TA.py::test_conflicts PASSED                                                                                                                             [ 40%]
+test_allocation_TA.py::test_under_support PASSED                                                                                                                         [ 60%]
+test_allocation_TA.py::test_unwilling PASSED                                                                                                                             [ 80%]
+test_allocation_TA.py::test_unpreferred PASSED                                                                                                                           [100%]
+
+============================================================================== warnings summary ===============================================================================
+test_allocation_TA.py::test_unwilling
+  C:\Users\USER\OneDrive\Documents\Coding_programming\School semesters\Fall 2024 semester\DS 3500\HW 5\TA-allocation\allocate_TA.py:95: FutureWarning: Series.__getitem__ treati
+ng keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+    preference = [preference[idx] for idx in ta_sections]
+
+test_allocation_TA.py::test_unpreferred
+  C:\Users\USER\OneDrive\Documents\Coding_programming\School semesters\Fall 2024 semester\DS 3500\HW 5\TA-allocation\allocate_TA.py:118: FutureWarning: Series.__getitem__ treat
+ing keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+    preference = [preference[idx] for idx in ta_sections]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+---------- coverage: platform win32, python 3.12.4-final-0 -----------
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+allocate_TA.py            199     90    55%
+evo.py                     70     51    27%
+profiler.py                28     13    54%
+test_allocation_TA.py      45      8    82%
+-------------------------------------------
+TOTAL                     342    162    53%
+
+======================================================================== 5 passed, 2 warnings in 1.97s ========================================================================

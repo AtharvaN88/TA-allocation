@@ -1,0 +1,14 @@
+groupname,overallocation,conflicts,undersupport,unwilling,unpreferred
+wombats,0,0,1,1,1
+wombats,0,0,3,0,1
+wombats,0,0,0,1,2
+wombats,0,0,0,3,0
+wombats,0,0,0,2,1
+wombats,0,0,0,0,3
+wombats,0,0,2,1,0
+wombats,0,1,0,1,1
+wombats,0,1,0,2,0
+wombats,0,0,1,0,2
+wombats,0,1,1,1,0
+wombats,0,0,1,2,0
+wombats,0,1,2,0,1
